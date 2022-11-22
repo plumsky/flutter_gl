@@ -54,6 +54,10 @@ public class OpenGLProgram {
     
     let programHandle = glCreateProgram()
     
+    print("================Vertex shader")
+    print(vertex_shader)
+    print("================Fragment shader")
+    print(fragment_shader)
 
     glAttachShader(programHandle, vertexShader)
     glAttachShader(programHandle, fragmentShader)
