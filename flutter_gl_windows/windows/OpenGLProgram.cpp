@@ -35,10 +35,10 @@ GLuint OpenGLProgram::compileShaders(char *vertex_shader, char *fragment_shader)
 
     GLuint programHandle = glCreateProgram();
 
-    std::count << "================Vertex shader" << std::endl;
-    std::count << vertex_shader << std::endl;
-    std::count << "================Fragment shader" << std::endl;
-    std::count << fragment_shader << std::endl;
+    std::cout << "================Vertex shader" << std::endl;
+    std::cout << vertex_shader << std::endl;
+    std::cout << "================Fragment shader" << std::endl;
+    std::cout << fragment_shader << std::endl;
 
     glAttachShader(programHandle, vertexShader);
     glAttachShader(programHandle, fragmentShader);
